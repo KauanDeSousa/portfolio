@@ -34,7 +34,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <section className="md:hidden flex px-[8px]">
+            <section className="md:hidden flex px-[8px] -mb-5">
                 <LanguageToggle />
             </section>
 
