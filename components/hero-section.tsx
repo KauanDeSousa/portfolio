@@ -63,7 +63,12 @@ export default function HeroSection() {
                 </motion.div>
             </motion.div>
 
-            <motion.div className="absolute bottom-20" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }}>
+            <motion.div
+                className="absolute sm:bottom-20 -bottom-20 "
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.5 }}
+            >
                 <Link href="#projects" className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors">
                     <span className="text-sm mb-2">{t('scrollDown')}</span>
                     <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
