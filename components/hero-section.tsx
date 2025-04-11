@@ -10,7 +10,7 @@ export default function HeroSection() {
     const { t } = useLanguage();
 
     return (
-        <section id="about" className="py-20 flex flex-col items-center justify-center min-h-[80vh] mb-6">
+        <section id="hero" className="py-20 flex flex-col items-center justify-center min-h-[80vh] mb-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -23,13 +23,13 @@ export default function HeroSection() {
                     transition={{ delay: 0.2, duration: 0.5 }}
                     className="mb-6 inline-block"
                 >
-                    <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary mx-auto">
+                    <div className="md:w-40 md:h-40 w-32 h-32 rounded-full overflow-hidden border-4 border-primary mx-auto">
                         <img src="/eu.png" alt="Profile" className="w-full h-full object-cover object-top" />
                     </div>
                 </motion.div>
 
                 <motion.h1
-                    className="text-4xl md:text-6xl font-bold mb-4"
+                    className="text-2xl md:text-6xl font-bold mb-4"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl text-muted-foreground mb-8"
+                    className="md:text-xl text-base text-muted-foreground mb-8"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, duration: 0.5 }}
@@ -64,12 +64,12 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-                className="absolute sm:bottom-20 -bottom-20 "
+                className="absolute sm:bottom-20 bottom-5"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.5 }}
             >
-                <Link href="#projects" className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors">
+                <Link href="#about" className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors">
                     <span className="text-sm mb-2">{t('scrollDown')}</span>
                     <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
                         <ArrowDown className="h-5 w-5" />
