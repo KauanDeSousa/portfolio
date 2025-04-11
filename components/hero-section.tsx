@@ -47,7 +47,7 @@ export default function HeroSection() {
                 </motion.p>
 
                 <motion.div
-                    className="flex flex-wrap gap-4 justify-center"
+                    className="flex flex-col md:flex-wrap gap-4 justify-center"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8, duration: 0.5 }}
@@ -64,7 +64,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-                className="absolute sm:bottom-20 bottom-5"
+                className="absolute sm:bottom-20 -bottom-1"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.5 }}
