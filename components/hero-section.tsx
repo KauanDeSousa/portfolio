@@ -10,7 +10,7 @@ export default function HeroSection() {
     const { t } = useLanguage();
 
     return (
-        <section id="hero" className="py-20 flex flex-col items-center justify-center min-h-[80vh] mb-6">
+        <section id="hero" className="py-20 relative flex flex-col items-center justify-center min-h-[80vh] mb-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -63,12 +63,7 @@ export default function HeroSection() {
                 </motion.div>
             </motion.div>
 
-            <motion.div
-                className="absolute sm:bottom-20 -bottom-1"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, duration: 0.5 }}
-            >
+            <motion.div className="absolute bottom-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }}>
                 <Link href="#about" className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors">
                     <span className="text-sm mb-2">{t('scrollDown')}</span>
                     <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}>
