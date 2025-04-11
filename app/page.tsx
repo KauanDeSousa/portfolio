@@ -16,7 +16,7 @@ import MobileMenu from '@/components/mobile-menu';
 export default function Home() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-background to-muted/50">
-            <header className="container mx-auto py-6 px-4 flex justify-between items-center">
+            <header className="container mx-auto md:py-6 md:pt-6 pt-6 px-4 flex justify-between items-center">
                 <Link href="/" className="text-2xl font-bold tracking-tighter">
                     <span className="text-primary">KAUAN</span>VITOR
                 </Link>
@@ -25,15 +25,22 @@ export default function Home() {
                         <NavLinks />
                     </nav>
                     <div className="flex items-center gap-2">
-                        <LanguageToggle />
+                        <span className="md:flex hidden">
+                            <LanguageToggle />
+                        </span>
                         <ThemeToggle />
                     </div>
                     <MobileMenu />
                 </div>
             </header>
 
+            <section className="md:hidden flex px-[8px]">
+                <LanguageToggle />
+            </section>
+
             <main className="container mx-auto px-4 pb-20">
                 <HeroSection />
+                <AboutMeSection />
                 <ProjectsSection />
                 <SkillsSection />
                 <TechStack />
@@ -228,3 +235,4 @@ function ClientTranslatedLink({
 
 // Import at the top of the file
 import { useLanguage } from '@/contexts/language-context';
+import AboutMeSection from '@/components/about-me';

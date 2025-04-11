@@ -28,6 +28,23 @@ const translations = {
         contactMe: 'Contact Me',
         scrollDown: 'Scroll Down',
 
+        // About
+        aboutTitle: 'About me',
+        aboutSubtitle: 'A little more about me',
+        aboutMeName: 'My experience as a DEV',
+        aboutMeDescription: `I am a developer who is passionate about technology and driven by the creation of intelligent, functional and visually impressive solutions. I have extensive knowledge of a variety of web and mobile technologies that allow me to work end-to-end in the development of robust, high-performance applications with an excellent user experience.
+
+                            My specialty begins with a solid foundation in HTML, CSS and JavaScript, with which I build modern, responsive and highly interactive interfaces. I have extensive experience with React and React Native, frameworks that I use to develop high-level web and mobile applications, with a focus on performance, scalability and usability.
+
+                            I use Next.js to take my applications to the next level, optimizing SEO and loading with advanced techniques such as server-side rendering and static site generation. For styling, I rely on the productivity and visual consistency offered by Tailwind CSS, allowing me to create clean, cohesive interfaces with a unique identity.
+
+                            In the desktop world, I use Electron.js to transform web applications into multiplatform software, offering complete experiences for Windows, macOS and Linux users, without giving up web technology.
+
+                            My stack also extends to the backend, where I have an extremely solid foundation in NestJS, Node.js, Prisma, Express, as well as expertise with PHP and Laravel, frameworks with which I develop APIs, complex systems and secure and scalable integrations. I am also fluent in Vue.js and in the use of relational databases such as MySQL, allowing me to create complete solutions, from the database to the front-end.
+
+                            This combination of skills allows me to deliver complete products, with high technical quality, modern design and total focus on the user experience. I am always looking for new challenges that allow me to apply my knowledge and evolve even further as a developer.`,
+        readMore: 'Read More...',
+        readLess: 'Read Less...',
         // Projects
         projectsTitle: 'Projects',
         projectsSubtitle: 'Check out some of my recent work',
@@ -89,6 +106,23 @@ const translations = {
         contactMe: 'Fale Comigo',
         scrollDown: 'Rolar para Baixo',
 
+        // About
+        aboutTitle: 'Sobre mim',
+        aboutSubtitle: 'Um pouco mais sobre mim',
+        aboutMeName: 'Minha experiência como DEV',
+        aboutMeDescription: `Sou um desenvolvedor apaixonado por tecnologia e movido pela criação de soluções inteligentes, funcionais e visualmente impressionantes. Possuo amplo domínio em uma variedade de tecnologias web e mobile que me permitem atuar de ponta a ponta no desenvolvimento de aplicações robustas, performáticas e com excelente experiência do usuário.
+
+                            Minha especialidade começa pela base sólida em HTML, CSS e JavaScript, com os quais construo interfaces modernas, responsivas e altamente interativas. Tenho vasta experiência com React e React Native, frameworks que utilizo para desenvolver aplicações web e mobile de alto nível, com foco em desempenho, escalabilidade e usabilidade.
+
+                            Utilizo Next.js para levar minhas aplicações ao próximo nível, otimizando o SEO e o carregamento com técnicas avançadas como server-side rendering e static site generation. Para estilização, aposto na produtividade e na consistência visual oferecida pelo Tailwind CSS, permitindo criar interfaces limpas, coesas e com identidade única.
+
+                            No universo desktop, utilizo Electron.js para transformar aplicações web em softwares multiplataforma, oferecendo experiências completas para usuários de Windows, macOS e Linux, sem abrir mão da tecnologia web.
+
+                            Minha stack também se estende ao backend, onde possuo uma base extremamente sólida em NestJS, Node.js, Prisma, Express, além de expertise com PHP e Laravel, frameworks com os quais desenvolvo APIs, sistemas complexos e integrações seguras e escaláveis. Também sou fluente em Vue.js e no uso de bancos de dados relacionais como MySQL, permitindo criar soluções completas, do banco de dados ao front-end.
+
+                            Essa combinação de habilidades me permite entregar produtos completos, com alta qualidade técnica, design moderno e foco total na experiência do usuário. Estou sempre em busca de novos desafios que me permitam aplicar meu conhecimento e evoluir ainda mais como desenvolvedor.`,
+        readMore: 'Leia Mais...',
+        readLess: 'Leia Menos...',
         // Projects
         projectsTitle: 'Projetos',
         projectsSubtitle: 'Confira alguns dos meus trabalhos recentes',
